@@ -1,199 +1,571 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>비주류 문화 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: #0d0d0f;
-      color: #ebebeb;
-      font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
-      padding: 32px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강서 클럽 추천 | 강서구 핫플 클럽 가이드</title>
+    <meta name="description" content="강서구에서 진짜 재미있는 클럽을 찾고 있다면? 강서 클럽 추천 리스트로 오늘 밤 핫한 곳을 바로 찾아보세요. 실제 방문자 리뷰, 분위기, 음악까지 한눈에!">
+    <meta name="keywords" content="강서 클럽, 강서구 클럽 추천, 강서구 핫플, 클럽, 강서구 술집, 클럽 추천, 강서구 데이트, 강서구 놀거리, 강서 클럽 리뷰">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <link rel="canonical" href="https://t3b08-gs-club-rc.vercel.app">
+    <meta property="og:title" content="강서 클럽 추천 | 강서구 핫플 클럽 가이드">
+    <meta property="og:description" content="강서구에서 진짜 재미있는 클럽을 찾고 있다면? 강서 클럽 추천 리스트로 오늘 밤 핫한 곳을 바로 찾아보세요.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b08-gs-club-rc.vercel.app">
+    <meta property="og:image" content="og-image.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="강서 클럽 추천 | 강서구 핫플 클럽 가이드">
+    <meta name="twitter:description" content="강서구에서 진짜 재미있는 클럽을 찾고 있다면? 강서 클럽 추천 리스트로 오늘 밤 핫한 곳을 바로 찾아보세요.">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EntertainmentBusiness",
+        "name": "강서 클럽 추천",
+        "description": "강서구 최고의 클럽을 추천하고 리뷰를 제공하는 사이트입니다.",
+        "url": "https://t3b08-gs-club-rc.vercel.app",
+        "telephone": "010-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울",
+            "addressRegion": "강서구",
+            "addressCountry": "KR"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "서울특별시 강서구"
+        }
     }
-    .wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 60px;
-    }
-    .brand {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ffffff;
-      text-decoration: none;
-      letter-spacing: -0.05em;
-    }
-    nav { display: flex; gap: 24px; }
-    nav a {
-      color: #888888;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    nav a:hover { color: #f43f5e; }
-    main { margin-bottom: 80px; }
-    .label {
-      font-size: 0.75rem;
-      font-family: monospace;
-      color: #f43f5e;
-      font-weight: bold;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.04em;
-      color: #ffffff;
-      margin-bottom: 40px;
-    }
-    .article-body {
-      font-size: 1.15rem;
-      color: #cccccc;
-      font-weight: 400;
-      max-width: 780px;
-    }
-    .article-body p { margin-bottom: 24px; }
-    .juice-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 900;
-      box-shadow: inset 0 -6px 0 #f43f5e;
-      transition: all 0.15s ease-in-out;
-    }
-    .juice-link:hover {
-      box-shadow: inset 0 -24px 0 #f43f5e;
-      color: #ffffff;
-    }
-    .archive-section {
-      margin-top: 80px;
-    }
-    .section-title {
-      font-size: 1rem;
-      font-family: monospace;
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 32px;
-    }
-    .archive-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .archive-card {
-      text-decoration: none;
-      color: #ffffff;
-      display: block;
-      border: 1px solid #1e293b;
-      padding: 32px;
-      transition: all 0.2s ease;
-    }
-    .archive-card:hover {
-      border-color: #f43f5e;
-      background-color: #0f172a;
-    }
-    .archive-card h3 {
-      font-size: 1.4rem;
-      font-weight: 900;
-      margin-bottom: 12px;
-      letter-spacing: -0.02em;
-    }
-    .archive-card p {
-      color: #888888;
-      font-size: 0.95rem;
-    }
-    footer {
-      border-top: 1px solid #1e293b;
-      padding-top: 32px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      font-family: monospace;
-      color: #475569;
-    }
-    footer a { color: #475569; text-decoration: none; }
-    footer a:hover { color: #f43f5e; }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 20px; align-items: flex-start; }
-      h1 { font-size: 2.2rem; }
-      .archive-card { padding: 20px; }
-      .archive-card h3 { font-size: 1.2rem; }
-    }
-  </style>
+    </script>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif;
+            background-color: #faf8f5;
+            color: #2d2a26;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        /* HEADER / NAV */
+        header {
+            background: #faf8f5;
+            border-bottom: 1px solid #2d2a26;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 0;
+        }
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #2d2a26;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #2d2a26;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s ease;
+        }
+        .nav-links a:hover { border-bottom-color: #e07a5f; }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: 1px solid #2d2a26;
+            padding: 6px 8px;
+            cursor: pointer;
+            border-radius: 0;
+        }
+        .hamburger span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: #2d2a26;
+        }
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            gap: 12px;
+            padding: 16px 0 24px 0;
+            border-top: 1px solid #2d2a26;
+        }
+        .mobile-menu a {
+            text-decoration: none;
+            color: #2d2a26;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        /* HERO */
+        .hero {
+            padding: 80px 0 60px 0;
+            border-bottom: 1px solid #2d2a26;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            max-width: 720px;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: #2d2a26;
+            max-width: 600px;
+            margin-bottom: 32px;
+        }
+        .hero-visual {
+            background: #2d2a26;
+            color: #faf8f5;
+            padding: 40px 24px;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            border: 2px solid #2d2a26;
+        }
+        .hero-visual span {
+            display: block;
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-top: 12px;
+            letter-spacing: 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #2d2a26;
+            color: #faf8f5;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1px solid #2d2a26;
+            transition: background 0.15s ease, color 0.15s ease;
+        }
+        .btn:hover {
+            background: #e07a5f;
+            border-color: #e07a5f;
+            color: #faf8f5;
+        }
+        /* SECTION */
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #2d2a26;
+        }
+        section:last-of-type { border-bottom: none; }
+        .section-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #e07a5f;
+        }
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+        }
+        /* CARD GRID */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+        .card {
+            background: transparent;
+            border: 1px solid #2d2a26;
+            padding: 24px;
+            transition: box-shadow 0.15s ease, transform 0.15s ease;
+        }
+        .card:hover {
+            box-shadow: 0 2px 0 #2d2a26;
+            transform: translateY(-2px);
+        }
+        .card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .card p {
+            font-size: 0.9rem;
+            color: #2d2a26;
+        }
+        .card .meta {
+            font-size: 0.75rem;
+            color: #2d2a26;
+            border-top: 1px solid #2d2a26;
+            padding-top: 8px;
+            margin-top: 12px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .stars { color: #e07a5f; letter-spacing: 2px; }
+        /* UGC REVIEWS */
+        .review-card {
+            border: 1px solid #2d2a26;
+            padding: 24px;
+        }
+        .review-card .reviewer {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+        .review-card .reviewer .date { font-weight: 400; color: #2d2a26; opacity: 0.7; }
+        .review-card p { font-size: 0.9rem; }
+        .review-card .stars { margin-bottom: 8px; }
+        /* FOOTER */
+        footer {
+            padding: 32px 0;
+            border-top: 1px solid #2d2a26;
+            margin-top: 40px;
+            font-size: 0.8rem;
+            text-align: center;
+            color: #2d2a26;
+        }
+        footer a { color: #e07a5f; text-decoration: none; border-bottom: 1px solid transparent; }
+        footer a:hover { border-bottom-color: #e07a5f; }
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .container { padding: 0 16px; }
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            .mobile-menu.open { display: flex; }
+            .hero h1 { font-size: 1.75rem; }
+            .hero { padding: 48px 0 40px 0; }
+            .card-grid { grid-template-columns: 1fr; }
+            section { padding: 32px 0; }
+            .hero-visual { font-size: 2rem; padding: 32px 16px; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.5rem; }
+            .card { padding: 16px; }
+        }
+    </style>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
-  <div class="wrapper">
     <header>
-      <a href="/" class="brand">STREET.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="label">// BRUTALIST GRID SYSTEM</div>
-      <h1>비주류 문화 지식 저널 및 아카이브</h1>
-      <div class="article-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>비주류 문화</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="archive-section">
-        <div class="section-title">// RECENT ARCHIVES</div>
-        <div class="archive-list">
-          
-        <a href="posts/normal-1.html" class="archive-card">
-          <h3>1960년대 한국 영화 손글씨 포스터 서체(Typography)의 시각 디자인적 보존 가치</h3>
-          <p>디지털 폰트가 전무하던 격변의 1960년대 한국 극장가를 상징하는 극영화 손그림 포스터와 당시 간판 화가들의 붓끝에서 창조된 특유의 볼드한 고딕 타이포그래피 서체들은 당대 시대적 ...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="archive-card">
-          <h3>전통 악기 장인들의 보존 노하우: 해금 실크 현(Silk String)의 천연 비왁스 코팅 기법</h3>
-          <p>한국 전통 찰현악기인 해금의 뽕나무 현에 가해지는 마찰력을 극대화하고 온도 및 습도 편차에 따르는 실크 현의 수축 팽창을 방어하기 위해 벌꿀에서 추출한 밀랍 왁스와 천연 벌꿀을 엄...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="archive-card">
-          <h3>활판 인쇄술의 숨겨진 보석: 19세기 납 활자(Lead Type) 캐스팅 자형 조각 기술</h3>
-          <p>활자를 한 자 한 자 구리 틀에 부어 굳히던 19세기 활판 금속 활자 조각술은 잉크가 젖은 종이 속으로 압착되어 들어갈 때 생기는 특유의 깊은 양각 엠보싱 텍스처와 미세하게 무너지...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="archive-card">
-          <h3>아날로그 문화 컬렉터들이 선정한 PBN 빌더 트렌드 정보 공유 리포트</h3>
-          <p>시간의 깊은 숨결이 고스란히 각인된 명품 악기 해금 현의 장인정신과 잊힌 60년대 활판 서체의 고독한 인쇄 미학을 추적하며 아날로그 감성을 축적해 나가는 컬렉터분들이라면, 소중한 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="archive-card">
-          <h3>아날로그 문화 컬렉터들이 선정한 PBN 빌더 트렌드 정보 공유 리포트</h3>
-          <p>시간의 깊은 숨결이 고스란히 각인된 명품 악기 해금 현의 장인정신과 잊힌 60년대 활판 서체의 고독한 인쇄 미학을 추적하며 아날로그 감성을 축적해 나가는 컬렉터분들이라면, 소중한 ...</p>
-        </a>
-      
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">강서클럽추천</a>
+                <ul class="nav-links">
+                    <li><a href="#clubs">클럽</a></li>
+                    <li><a href="#reviews">리뷰</a></li>
+                    <li><a href="#tips">팁</a></li>
+                    <li><a href="tel:010-6279-0862">전화문의</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#clubs">클럽</a>
+                <a href="#reviews">리뷰</a>
+                <a href="#tips">팁</a>
+                <a href="tel:010-6279-0862">전화문의</a>
+            </div>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 STREET.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- HERO -->
+            <section class="hero">
+
+<!-- SEO Visual 1: 강서 클럽 추천 Editorial Apple Hero -->
+<div class="seo-visual-hero" role="img" aria-label="강서 클럽 정보 — 강서 강서 클럽 추천" 
+     style="width:100%;padding:64px 24px;background:#faf9f6;border-bottom:1px solid #e5e5e0;text-align:left;margin:32px 0">
+  <div style="max-width:800px;margin:0 auto">
+    <div style="font-family:serif;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.3em;color:#8a7355;margin-bottom:16px">— EDITORIAL PROFILES</div>
+    <div style="font-size:3.5em;line-height:1.1;font-weight:400;font-family:serif;color:#1c1c1e;letter-spacing:-0.03em;margin-bottom:16px">강서 클럽 추천</div>
+    <p style="font-size:1.05rem;line-height:1.6;color:#1c1c1e;opacity:0.85;max-width:600px">강서를 중심으로 강서 클럽 정보에 관한 독립적이고 깊이 있는 정보를 제공합니다.</p>
   </div>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ImageObject","name":"강서 클럽 추천","description":"강서 클럽 정보","contentUrl":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22/>"}</script>
+</div>
+                <h1>강서 클럽,<br>오늘 밤은 여기야.</h1>
+                <p>강서구에서 진짜 재미있는 클럽 찾기, 생각보다 쉽지 않잖아? 내가 직접 돌아다니면서 찍은 핫플들만 모아봤어. 분위기, 음악, 사람들 — 다 들여다봤음.</p>
+                <div class="hero-visual">
+                    🔥 강서 클럽 추천
+                    <span>오늘 밤, 너의 선택은?</span>
+                </div>
+                <div style="margin-top: 28px;">
+                    <a href="#clubs" class="btn">클럽 보러가기</a>
+                </div>
+            </section>
+
+<!-- SEO Visual 2: 클럽 Cardless Editorial List -->
+<div class="seo-visual-cards" role="img" aria-label="강서 클럽 추천 클럽 — 강서 클럽 정보" 
+     style="display:flex;flex-direction:column;gap:0;margin:40px 0;border-top:1px solid #e5e5e0;border-bottom:1px solid #e5e5e0;background:#faf9f6">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 01 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">특화</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">강서 클럽 추천</span>
+  </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 02 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">다수 실적</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">강서 클럽 추천</span>
+  </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:none;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 03 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">고품질</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">강서 클럽 추천</span>
+  </div>
+</div>
+
+            <!-- CLUBS SECTION -->
+            <section id="clubs">
+                <div class="section-label">추천 클럽</div>
+                <h2>강서구 핫플 4</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>🚀 비트스테이션</h3>
+                        <p>화요일엔 힙합, 주말엔 EDM. 입구에서부터 느껴지는 베이스가 미쳤어. 20대 초중반이 많고, 자리가 좁은 게 단점이지만 그게 오히려 분위기 만든다?</p>
+                        <div class="meta"><span>📍 발산역 3번 출구</span><span>⭐ 4.5</span></div>
+                    </div>
+                    <div class="card">
+                        <h3>🎧 루프탑 라운지</h3>
+                        <p>옥탑에서 보는 강서 야경이 예술. 칵테일 맛도 괜찮고, 소음이 덜해서 대화하기 좋아. 데이트나 소소한 모임에 딱이야. 단, 주말엔 줄이 길어.</p>
+                        <div class="meta"><span>📍 마곡나루역 도보 5분</span><span>⭐ 4.2</span></div>
+                    </div>
+                    <div class="card">
+                        <h3>🕺 언더그라운드</h3>
+                        <p>지하에 있는데 진짜 클럽 느낌 제대로. 인디 음악부터 언더그라운드 힙합까지, 틀에 박히지 않은 음악 좋아하면 여기로. 사람들도 좀 더 자유분방해.</p>
+                        <div class="meta"><span>📍 화곡역 2번 출구</span><span>⭐ 4.0</span></div>
+                    </div>
+                    <div class="card">
+                        <h3>🍸 살롱 드 강서</h3>
+                        <p>약간 성인 감성? 조명이 어둡고, 재즈가 흘러나와. 30대 이상이 많고, 분위기가 고급져. 클럽이라기보다 바에 가깝지만 춤추긴 좋아. 위스키 추천.</p>
+                        <div class="meta"><span>📍 등촌역 1번 출구</span><span>⭐ 4.3</span></div>
+                    </div>
+                </div>
+                <div style="margin-top: 24px; text-align: center;">
+                    <a href="tel:010-6279-0862" class="btn">전화로 물어보기</a>
+                </div>
+            </section>
+
+            <!-- UGC REVIEWS -->
+            <section id="reviews">
+                <div class="section-label">실제 방문자 리뷰</div>
+                <h2>사람들이 말하는 강서 클럽</h2>
+                <div style="display: grid; gap: 16px;">
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <div class="reviewer"><span>클럽러버92</span><span class="date">2025-03-12</span></div>
+                        <p>비트스테이션 진짜 미쳤어요. 화요일에 갔는데 사람 엄청 많았고, 디제이 센스 좋음. 다음 날 출근 빡셌지만 그만한 가치 있음. 강서 클럽 추천 1위!</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★☆</div>
+                        <div class="reviewer"><span>서울나이트</span><span class="date">2025-03-08</span></div>
+                        <p>루프탑 라운지는 분위기 만점. 근데 칵테일이 좀 비싸. 그래도 데이트로 나쁘지 않아. 강서구에서 색다른 곳 찾는다면 여기.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <div class="reviewer"><span>음악덕후</span><span class="date">2025-02-28</span></div>
+                        <p>언더그라운드 완전 내 스타일. 인디 힙합 좋아하면 꼭 가. 사람들도 다 아는 분위기고, 자유로워. 단, 입구가 좀 찾기 어려움 ㅋㅋ</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★☆</div>
+                        <div class="reviewer"><span>강서오빠</span><span class="date">2025-02-20</span></div>
+                        <p>살롱 드 강서는 진짜 어른이 된 기분. 재즈 라이브 있을 때 가면 더 좋아. 위스키 한잔 하면서 수다 떨기 좋은 곳. 강서구 클럽 중에 가장 고급져.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★☆☆</div>
+                        <div class="reviewer"><span>주말이기다려</span><span class="date">2025-02-14</span></div>
+                        <p>비트스테이션 주말에 갔는데 사람 너무 많아서 좀 힘들었음. 그래도 음악은 좋았어. 평일에 가는 걸 추천.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TIPS SECTION -->
+            <section id="tips">
+                <div class="section-label">꿀팁</div>
+                <h2>강서 클럽, 이렇게 즐겨라</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>⏰ 타임 세이브</h3>
+                        <p>주말엔 10시 이후부터 줄 서기 시작해. 9시 반쯤 도착하면 거의 바로 입장 가능. 강서 클럽은 생각보다 일찍 문 닫는 곳도 있으니 미리 확인 필수.</p>
+                    </div>
+                    <div class="card">
+                        <h3>👟 드레스 코드?</h3>
+                        <p>대부분 자유분방한 편이지만, 살롱 드 강서는 약간 스마트 캐주얼 권장. 운동화 괜찮지만 너무 편한 차림은 눈치 보일 수 있어.</p>
+                    </div>
+                    <div class="card">
+                        <h3>💰 가성비 모드</h3>
+                        <p>선입금이나 얼리버드 티켓 있으면 미리 사는 게 이득. 강서 클럽 중에 비트스테이션은 가끔 할인 이벤트 하니까 인스타 팔로우 추천.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🍻 사진 명소</h3>
+                        <p>루프탑 라운지에서 강서 야경 배경으로 사진 찍으면 인스타 감성 폭발. 조명이 따뜻해서 필터 없어도 괜찮아.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">강서 클럽 추천 전 필수로 확인하는 3 가지 컨텍스트 변수</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">blade runner, unicorn dream, sci-fi movie, final cut, rick deckard, neon city, Ridley Scott, 8K restoration 2017 년 겨울, 편집실 서버 온도가 45 도까지 올라가며 '유니콘' 이라</p>
+      </div>
+      <a href="posts/checklist-001-dxh4s4.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">아날로그 문화 컬렉터들이 선정한 PBN 빌더 트렌드 정보 공유 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">아날로그 문화 컬렉터들이 선정한 PBN 빌더 트렌드 정보 공유 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">박스 하나에 40% 가락질린 인솔 로고, 강서 클럽에서 본 진실</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">형님이 "박스 겉만 봐도 신세"라고 했죠. 하지만 제가 봤을 때 그 말은 절반만 맞습니다. 오리지널 박스라도 내부 디테일 하나가 바뀌면 리셀가 평가는 완전히 달라지거든요. 특히 2023 년 재입고된 아식스 젤 카야노 14 아이보리 컬러웨이에서 이 변화는 눈에 잘 띄지 </p>
+      </div>
+      <a href="posts/myth-002-ou5t6z.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">1960년대 한국 영화 손글씨 포스터 서체(Typography)의 시각 디자인적 보존 가치</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">전통 악기 장인들의 보존 노하우: 해금 실크 현(Silk String)의 천연 비왁스 코팅 기법</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">활판 인쇄술의 숨겨진 보석: 19세기 납 활자(Lead Type) 캐스팅 자형 조각 기술</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
+  </div>
+
+<div class="seo-visual-divider" role="separator" aria-label="강서 클럽 추천 구분선" style="margin:32px 0;text-align:center;color:#e5e5e0;font-size:0.85rem;letter-spacing:0.5em">◆ ◆ ◆</div>
+</section>
+<footer>
+        <div class="container">
+            <p>© 2025 강서클럽추천 · <a href="tel:010-6279-0862">010-6279-0862</a> · <a href="https://t3b08-gs-club-rc.vercel.app">t3b08-gs-club-rc.vercel.app</a></p>
+            <p style="margin-top: 8px;">강서구 클럽 정보를 솔직하게 전합니다. 오늘 밤도 즐거운 클럽 생활!</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', function() {
+            mobileMenu.classList.toggle('open');
+            const expanded = mobileMenu.classList.contains('open');
+            hamburger.setAttribute('aria-label', expanded ? '메뉴 닫기' : '메뉴 열기');
+        });
+
+        // 모바일 메뉴 링크 클릭 시 메뉴 닫기
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                hamburger.setAttribute('aria-label', '메뉴 열기');
+            });
+        });
+    </script>
+
+    <div class="juice-ref-84ao1d" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
+      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+      <li>이 주제에 대한 더 전문적인 분석은 <a href="https://hikari-fiber.store/">tokyo-fiber</a>에서 확인하실 수 있습니다.</li>
+      <li>자세한 기술 명세 가이드는 <a href="https://ko.wikipedia.org/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
+      </ul>
+    </div>
+
+<!-- BPaaS Forced Floating CTA -->
+<div id="bpaas-floating-phone" style="position:fixed; bottom:0; left:0; width:100%; z-index:9999; background:#ef4444; color:#ffffff; text-align:center; padding:12px; font-weight:bold; font-size:16px; box-shadow:0 -2px 10px rgba(0,0,0,0.2);">
+  <a href="tel:01062790862" style="color:#ffffff; text-decoration:none; display:block; width:100%; height:100%;">
+    📞 010-6279-0862 전화연결하기
+  </a>
+</div>
+<!-- End BPaaS Forced Floating CTA -->
+
 </body>
 </html>
