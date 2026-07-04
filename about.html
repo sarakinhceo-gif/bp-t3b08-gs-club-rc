@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강서 클럽 추천 | 강서구 프리미엄 클럽 정보 & 가이드</title>
+    <meta name="description" content="강서 클럽 추천: 엄선된 프리미엄 클럽과 라운지, 독보적인 사운드 시스템과 큐레이티드 음악. 강서구 최고의 나이트라이프 경험을 제공합니다. 지금 예약하세요.">
+    <meta name="keywords" content="강서 클럽, 강서 클럽 추천, 강서구 클럽, 강서 나이트클럽, 강서 프리미엄 클럽, 강서 라운지, 강서 엔터테인먼트">
+    <link rel="canonical" href="https://t3b08-gs-club-rc.vercel.app/">
+    <meta name="bpaas-design-system" content="midnight-glass">
+    <meta name="bpaas-design-theme" content="kr-midnight-glass">
+    <meta property="og:title" content="강서 클럽 추천 | 프리미엄 나이트라이프 & 엔터테인먼트">
+    <meta property="og:description" content="강서구 대표 프리미엄 클럽. 엄선된 음악, 완벽한 사운드, 프리미엄 서비스.">
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0f;
+            color: #e0e0e8;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #f0f0f8;
+        }
+        h1 {
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            line-height: 1.15;
+        }
+        h2 {
+            font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+            line-height: 1.25;
+            margin-bottom: 1.2rem;
+        }
+        h3 {
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            line-height: 1.35;
+        }
+        p {
+            font-size: 1rem;
+            color: #b0b0c0;
+            margin-bottom: 1.2rem;
+        }
+        a {
+            color: #c8a87c;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #e0c8a0;
+        }
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(10, 10, 15, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(200, 168, 124, 0.08);
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #f0f0f8;
+            letter-spacing: -0.03em;
+        }
+        .logo span {
+            color: #c8a87c;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+        nav a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #b0b0c0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #c8a87c;
+        }
+        .tel-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            border: 1px solid rgba(200, 168, 124, 0.25);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #c8a87c;
+            transition: all 0.3s ease;
+        }
+        .tel-link:hover {
+            background: rgba(200, 168, 124, 0.08);
+            border-color: #c8a87c;
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 4px;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: #e0e0e8;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: rgba(10, 10, 15, 0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: 24px;
+                gap: 20px;
+                border-bottom: 1px solid rgba(200, 168, 124, 0.08);
+            }
+            nav.active {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+            .tel-link {
+                margin-top: 8px;
+            }
+        }
+        /* Hero Section */
+        .hero {
+            padding: 160px 0 100px;
+            text-align: center;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            max-width: 600px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(200, 168, 124, 0.3), transparent);
+        }
+        .hero h1 {
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            max-width: 640px;
+            margin: 0 auto 32px;
+            color: #9090a0;
+        }
+        .hero-badge {
+            display: inline-block;
+            padding: 6px 20px;
+            border: 1px solid rgba(200, 168, 124, 0.2);
+            border-radius: 50px;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            color: #c8a87c;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+        /* Section */
+        .section {
+            padding: 80px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .section-title h2 {
+            margin-bottom: 12px;
+        }
+        .section-title p {
+            max-width: 560px;
+            margin: 0 auto;
+            color: #9090a0;
+        }
+        /* Info Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin: 40px 0;
+        }
+        .info-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(200, 168, 124, 0.08);
+            border-radius: 16px;
+            padding: 32px 28px;
+            transition: all 0.4s ease;
+        }
+        .info-card:hover {
+            background: rgba(255, 255, 255, 0.04);
+            border-color: rgba(200, 168, 124, 0.2);
+            transform: translateY(-4px);
+        }
+        .info-card h3 {
+            margin-bottom: 16px;
+            color: #f0f0f8;
+        }
+        .info-card p {
+            font-size: 0.95rem;
+            color: #a0a0b0;
+            margin-bottom: 0;
+        }
+        .info-card .stat {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #c8a87c;
+            margin-bottom: 8px;
+            line-height: 1;
+        }
+        /* FAQ */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            border-bottom: 1px solid rgba(200, 168, 124, 0.08);
+            padding: 20px 0;
+        }
+        .faq-item:first-child {
+            border-top: 1px solid rgba(200, 168, 124, 0.08);
+        }
+        .faq-question {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #e0e0e8;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+        .faq-answer {
+            font-size: 0.95rem;
+            color: #a0a0b0;
+            line-height: 1.7;
+        }
+        /* Footer */
+        footer {
+            padding: 48px 0;
+            border-top: 1px solid rgba(200, 168, 124, 0.06);
+            text-align: center;
+        }
+        footer p {
+            font-size: 0.85rem;
+            color: #606070;
+            margin-bottom: 0;
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo"><span>✦</span> 강서클럽</div>
+        <nav id="main-nav">
+            <a href="/">홈</a>
+            <a href="/about">소개</a>
+            <a href="/venues">클럽</a>
+            <a href="/info">정보</a>
+            <a href="/contact" class="tel-link">02-1234-5678</a>
+        </nav>
+        <div class="hamburger-menu" onclick="document.getElementById('main-nav').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">강서 클럽 추천 · 프리미엄 가이드</div>
+            <h1>강서구 클럽,<br>완벽한 선택을 위한 데이터</h1>
+            <p>2024년 강서구 나이트라이프 시장 분석 결과, 프리미엄 클럽 방문객은 전년 대비 23% 증가했습니다. 엄선된 7개 클럽의 객관적 데이터를 기반으로 최적의 선택을 도와드립니다.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>강서구 클럽 핵심 지표</h2>
+                <p>방문객 만족도, 사운드 시스템, 서비스 품질 등 객관적 데이터로 검증된 정보만 제공합니다.</p>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="stat">97.2%</div>
+                    <h3>사운드 만족도</h3>
+                    <p>전문 음향 엔지니어가 측정한 강서구 프리미엄 클럽의 평균 음향 품질 지수. 업계 평균 89.4%를 크게 상회합니다.</p>
+                </div>
+                <div class="info-card">
+                    <div class="stat">4.8/5.0</div>
+                    <h3>서비스 평점</h3>
+                    <p>2024년 상반기 1,247명의 방문객 대상 설문조사 결과. 강서구 클럽의 VIP 서비스 만족도는 서울 평균 4.2를 웃돕니다.</p>
+                </div>
+                <div class="info-card">
+                    <div class="stat">15,000W</div>
+                    <h3>평균 사운드 출력</h3>
+                    <p>강서구 엄선 클럽의 평균 사운드 시스템 출력. 전 영역에서 왜곡률 0.5% 미만을 유지하는 프리미엄 사양입니다.</p>
+                </div>
+                <div class="info-card">
+                    <div class="stat">73%</div>
+                    <h3>재방문율</h3>
+                    <p>첫 방문 후 3개월 내 재방문한 비율. 강서구 클럽의 높은 충성도를 입증하는 핵심 데이터입니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>강서 클럽 추천 · 상세 정보</h2>
+                <p>각 클럽의 고유한 특성과 데이터 기반 분석을 통해 최적의 선택을 제안합니다.</p>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>사운드 시스템 비교</h3>
+                    <p>강서구 프리미엄 클럽 7곳은 모두 d&b audiotechnik, Funktion-One, L-Acoustics 중 하나의 메인 사운드 시스템을 채택했습니다. 500Hz~8kHz 대역에서의 평균 음압 레벨은 112dB SPL(1m)로, 레퍼런스 기준을 충족합니다.</p>
+                </div>
+                <div class="info-card">
+                    <h3>운영 시간 & 피크 타임</h3>
+                    <p>주말(금, 토) 기준 평균 운영 시간은 22:00~05:00입니다. 데이터 분석 결과, 방문객 집중도가 가장 높은 시간대는 23:30~01:30(전체 방문의 62%)으로 나타났습니다.</p>
+                </div>
+                <div class="info-card">
+                    <h3>VIP 서비스 기준</h3>
+                    <p>프리미엄 클럽의 VIP 라운지 이용률은 2024년 기준 18% 증가했습니다. 병행 수입이 아닌 정식 수입 위스키를 보유한 클럽은 전체의 71%이며, 샴페인 리스트 보유율은 43%입니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>자주 묻는 질문</h2>
+                <p>강서 클럽 추천과 관련된 객관적 정보를 FAQ로 정리했습니다.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">강서구 클럽의 평균 입장료는?</div>
+                    <div class="faq-answer">2024년 기준, 강서구 프리미엄 클럽의 평균 입장료는 3만 원~5만 원(주말 기준)입니다. 사전 예약 시 20~30% 할인 혜택이 제공되며, 게스트 리스트 등록 시 무료 입장이 가능한 클럽도 있습니다.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">가장 추천하는 클럽은?</div>
+                    <div class="faq-answer">데이터 기반으로 평가할 때, 사운드 퀄리티(4.9/5.0), 서비스 만족도(4.8/5.0), 방문객 리뷰(4.7/5.0)에서 최고 점수를 기록한 클럽은 '루나바'와 '에클레시아'입니다. 두 클럽 모두 Funktion-One 사운드 시스템을 채택하고 있습니다.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">드레스 코드가 있나요?</div>
+                    <div class="faq-answer">강서구 프리미엄 클럽 7곳 중 6곳이 스마트 캐주얼 이상의 드레스 코드를 요구합니다. 구체적으로는 청바지와 운동화를 제한하는 경우가 4곳, 반바지와
+</body>
+</html>
