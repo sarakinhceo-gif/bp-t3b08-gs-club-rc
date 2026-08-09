@@ -1,361 +1,359 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>강서 클럽 추천 | 강서구 핫플 클럽 가이드</title>
-    <meta name="description" content="강서구에서 진짜 재미있는 클럽을 찾고 있다면? 강서 클럽 추천 리스트로 오늘 밤 핫한 곳을 바로 찾아보세요. 실제 방문자 리뷰, 분위기, 음악까지 한눈에!">
-    <meta name="keywords" content="강서 클럽, 강서구 클럽 추천, 강서구 핫플, 클럽, 강서구 술집, 클럽 추천, 강서구 데이트, 강서구 놀거리, 강서 클럽 리뷰">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-warm-grid">
-    <link rel="canonical" href="https://gangseo-review-zone.mapo-room-guide.xyz/blog.html">
-    <meta property="og:title" content="강서 클럽 추천 | 강서구 핫플 클럽 가이드">
-    <meta property="og:description" content="강서구에서 진짜 재미있는 클럽을 찾고 있다면? 강서 클럽 추천 리스트로 오늘 밤 핫한 곳을 바로 찾아보세요. 실제 방문자 리뷰, 분위기, 음악까지 한눈에!">
-    <style>
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #faf7f2;
-            color: #1a1a1a;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        header {
-            background-color: #1a1a1a;
-            padding: 16px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #f5e6d3;
-            letter-spacing: -0.5px;
-        }
-        .logo span {
-            color: #d4a373;
-        }
-        .nav-links {
-            display: flex;
-            gap: 32px;
-            list-style: none;
-        }
-        .nav-links a {
-            color: #e0d5c7;
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: color 0.3s ease;
-            letter-spacing: 0.3px;
-        }
-        .nav-links a:hover {
-            color: #d4a373;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            padding: 8px;
-            background: none;
-            border: none;
-        }
-        .hamburger span {
-            width: 28px;
-            height: 2.5px;
-            background-color: #f5e6d3;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-        .mobile-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background-color: #2a2a2a;
-            padding: 20px;
-            flex-direction: column;
-            gap: 16px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
-        .mobile-menu a {
-            color: #e0d5c7;
-            text-decoration: none;
-            font-size: 1.1rem;
-            font-weight: 500;
-            padding: 8px 0;
-            border-bottom: 1px solid #3a3a3a;
-        }
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            .hamburger {
-                display: flex;
-            }
-            .mobile-menu.active {
-                display: flex;
-            }
-        }
-        .hero {
-            background: linear-gradient(135deg, #2d2a24 0%, #1a1a1a 100%);
-            padding: 80px 0 60px;
-            text-align: center;
-            color: #f5e6d3;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 16px;
-            letter-spacing: -1px;
-            line-height: 1.2;
-        }
-        .hero h1 span {
-            color: #d4a373;
-        }
-        .hero p {
-            font-size: 1.15rem;
-            max-width: 650px;
-            margin: 0 auto;
-            color: #c9b9a8;
-            line-height: 1.7;
-        }
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            .hero p {
-                font-size: 1rem;
-            }
-        }
-        .section-title {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 40px;
-            text-align: center;
-            color: #1a1a1a;
-            letter-spacing: -0.5px;
-        }
-        .section-title span {
-            color: #d4a373;
-        }
-        .blog-card {
-            background: #fff;
-            border-radius: 20px;
-            padding: 48px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-            margin: 60px 0;
-        }
-        .blog-card h2 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            margin-bottom: 12px;
-            color: #1a1a1a;
-            letter-spacing: -0.5px;
-        }
-        .blog-card .meta {
-            font-size: 0.9rem;
-            color: #8a7a6a;
-            margin-bottom: 32px;
-            display: flex;
-            gap: 16px;
-            flex-wrap: wrap;
-        }
-        .blog-card .meta span {
-            background: #f0ebe4;
-            padding: 4px 12px;
-            border-radius: 20px;
-        }
-        .blog-card p {
-            font-size: 1.05rem;
-            margin-bottom: 20px;
-            color: #3a3a3a;
-            line-height: 1.8;
-        }
-        .blog-card .highlight-box {
-            background: #f8f4ef;
-            border-left: 4px solid #d4a373;
-            padding: 24px;
-            border-radius: 12px;
-            margin: 32px 0;
-        }
-        .blog-card .highlight-box p {
-            margin-bottom: 8px;
-        }
-        .blog-card ul {
-            margin: 20px 0 20px 24px;
-        }
-        .blog-card ul li {
-            margin-bottom: 12px;
-            font-size: 1.05rem;
-            color: #3a3a3a;
-        }
-        .blog-card .cta-button {
-            display: inline-block;
-            background: #d4a373;
-            color: #1a1a1a;
-            padding: 14px 32px;
-            border-radius: 50px;
-            font-weight: 600;
-            text-decoration: none;
-            margin-top: 16px;
-            transition: background 0.3s ease, transform 0.2s ease;
-        }
-        .blog-card .cta-button:hover {
-            background: #c49363;
-            transform: translateY(-2px);
-        }
-        @media (max-width: 768px) {
-            .blog-card {
-                padding: 28px;
-            }
-            .blog-card h2 {
-                font-size: 1.6rem;
-            }
-        }
-        footer {
-            background: #1a1a1a;
-            color: #8a7a6a;
-            padding: 40px 0;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-        footer a {
-            color: #d4a373;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>강서 클럽 추천 | 강서구 핫플 클럽 가이드</title>
+ <meta name="description" content="강서구에서 진짜 재미있는 클럽을 찾고 있다면? 강서 클럽 추천 리스트로 오늘 밤 핫한 곳을 바로 찾아보세요. 실제 방문자 리뷰, 분위기, 음악까지 한눈에!">
+ <meta name="keywords" content="강서 클럽, 강서구 클럽 추천, 강서구 핫플, 클럽, 강서구 술집, 클럽 추천, 강서구 데이트, 강서구 놀거리, 강서 클럽 리뷰">
+ <link rel="canonical" href="https://gangseo-review-zone.mapo-room-guide.xyz/blog.html">
+ <meta property="og:title" content="강서 클럽 추천 | 강서구 핫플 클럽 가이드">
+ <meta property="og:description" content="강서구에서 진짜 재미있는 클럽을 찾고 있다면? 강서 클럽 추천 리스트로 오늘 밤 핫한 곳을 바로 찾아보세요. 실제 방문자 리뷰, 분위기, 음악까지 한눈에!">
+ <style>
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+ background-color: #faf7f2;
+ color: #1a1a1a;
+ line-height: 1.6;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 20px;
+ }
+ header {
+ background-color: #1a1a1a;
+ padding: 16px 0;
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+ }
+ nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ .logo {
+ font-size: 1.5rem;
+ font-weight: 700;
+ color: #f5e6d3;
+ letter-spacing: -0.5px;
+ }
+ .logo span {
+ color: #d4a373;
+ }
+ .nav-links {
+ display: flex;
+ gap: 32px;
+ list-style: none;
+ }
+ .nav-links a {
+ color: #e0d5c7;
+ text-decoration: none;
+ font-size: 0.95rem;
+ font-weight: 500;
+ transition: color 0.3s ease;
+ letter-spacing: 0.3px;
+ }
+ .nav-links a:hover {
+ color: #d4a373;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ cursor: pointer;
+ padding: 8px;
+ background: none;
+ border: none;
+ }
+ .hamburger span {
+ width: 28px;
+ height: 2.5px;
+ background-color: #f5e6d3;
+ border-radius: 4px;
+ transition: all 0.3s ease;
+ }
+ .mobile-menu {
+ display: none;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ right: 0;
+ background-color: #2a2a2a;
+ padding: 20px;
+ flex-direction: column;
+ gap: 16px;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+ }
+ .mobile-menu a {
+ color: #e0d5c7;
+ text-decoration: none;
+ font-size: 1.1rem;
+ font-weight: 500;
+ padding: 8px 0;
+ border-bottom: 1px solid #3a3a3a;
+ }
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ }
+ .hamburger {
+ display: flex;
+ }
+ .mobile-menu.active {
+ display: flex;
+ }
+ }
+ .hero {
+ background: linear-gradient(135deg, #2d2a24 0%, #1a1a1a 100%);
+ padding: 80px 0 60px;
+ text-align: center;
+ color: #f5e6d3;
+ }
+ .hero h1 {
+ font-size: 3rem;
+ font-weight: 800;
+ margin-bottom: 16px;
+ letter-spacing: -1px;
+ line-height: 1.2;
+ }
+ .hero h1 span {
+ color: #d4a373;
+ }
+ .hero p {
+ font-size: 1.15rem;
+ max-width: 650px;
+ margin: 0 auto;
+ color: #c9b9a8;
+ line-height: 1.7;
+ }
+ @media (max-width: 768px) {
+ .hero h1 {
+ font-size: 2rem;
+ }
+ .hero p {
+ font-size: 1rem;
+ }
+ }
+ .section-title {
+ font-size: 2rem;
+ font-weight: 700;
+ margin-bottom: 40px;
+ text-align: center;
+ color: #1a1a1a;
+ letter-spacing: -0.5px;
+ }
+ .section-title span {
+ color: #d4a373;
+ }
+ .blog-card {
+ background: #fff;
+ border-radius: 20px;
+ padding: 48px;
+ box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+ margin: 60px 0;
+ }
+ .blog-card h2 {
+ font-size: 2.2rem;
+ font-weight: 700;
+ margin-bottom: 12px;
+ color: #1a1a1a;
+ letter-spacing: -0.5px;
+ }
+ .blog-card .meta {
+ font-size: 0.9rem;
+ color: #8a7a6a;
+ margin-bottom: 32px;
+ display: flex;
+ gap: 16px;
+ flex-wrap: wrap;
+ }
+ .blog-card .meta span {
+ background: #f0ebe4;
+ padding: 4px 12px;
+ border-radius: 20px;
+ }
+ .blog-card p {
+ font-size: 1.05rem;
+ margin-bottom: 20px;
+ color: #3a3a3a;
+ line-height: 1.8;
+ }
+ .blog-card .highlight-box {
+ background: #f8f4ef;
+ border-left: 4px solid #d4a373;
+ padding: 24px;
+ border-radius: 12px;
+ margin: 32px 0;
+ }
+ .blog-card .highlight-box p {
+ margin-bottom: 8px;
+ }
+ .blog-card ul {
+ margin: 20px 0 20px 24px;
+ }
+ .blog-card ul li {
+ margin-bottom: 12px;
+ font-size: 1.05rem;
+ color: #3a3a3a;
+ }
+ .blog-card .cta-button {
+ display: inline-block;
+ background: #d4a373;
+ color: #1a1a1a;
+ padding: 14px 32px;
+ border-radius: 50px;
+ font-weight: 600;
+ text-decoration: none;
+ margin-top: 16px;
+ transition: background 0.3s ease, transform 0.2s ease;
+ }
+ .blog-card .cta-button:hover {
+ background: #c49363;
+ transform: translateY(-2px);
+ }
+ @media (max-width: 768px) {
+ .blog-card {
+ padding: 28px;
+ }
+ .blog-card h2 {
+ font-size: 1.6rem;
+ }
+ }
+ footer {
+ background: #1a1a1a;
+ color: #8a7a6a;
+ padding: 40px 0;
+ text-align: center;
+ font-size: 0.9rem;
+ }
+ footer a {
+ color: #d4a373;
+ text-decoration: none;
+ }
+ footer a:hover {
+ text-decoration: underline;
+ }
+ </style>
   <meta property="og:url" content="https://gangseo-review-zone.mapo-room-guide.xyz/blog.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">강서<span>클럽</span></div>
-                <ul class="nav-links">
-                    <li><a href="/">홈</a></li>
-                    <li><a href="/about">소개</a></li>
-                    <li><a href="/blog">블로그</a></li>
-                    <li><a href="/contact">문의</a></li>
-                </ul>
-                <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
-            <div class="mobile-menu" id="mobileMenu">
-                <a href="/">홈</a>
-                <a href="/about">소개</a>
-                <a href="/blog">블로그</a>
-                <a href="/contact">문의</a>
-            </div>
-        </div>
-    </header>
+ <header>
+ <div class="container">
+ <nav>
+ <div class="logo">강서<span>클럽</span></div>
+ <ul class="nav-links">
+ <li><a href="/">홈</a></li>
+ <li><a href="/about">소개</a></li>
+ <li><a href="/blog">블로그</a></li>
+ <li><a href="/contact">문의</a></li>
+ </ul>
+ <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+ 
+ 
+ 
+ </button>
+ </nav>
+ <div class="mobile-menu" id="mobileMenu">
+ <a href="/">홈</a>
+ <a href="/about">소개</a>
+ <a href="/blog">블로그</a>
+ <a href="/contact">문의</a>
+ </div>
+ </div>
+ </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>강서 클럽 <span>블로그</span></h1>
-            <p>진짜 재미있는 강서구 클럽 이야기. 내가 직접 경험하고 추천하는 핫플레이스 가이드</p>
-        </div>
-    </section>
+ <section class="hero">
+ <div class="container">
+ <h1>강서 클럽 <span>블로그</span></h1>
+ <p>진짜 재미있는 강서구 클럽 이야기. 내가 직접 경험하고 추천하는 핫플레이스 가이드</p>
+ </div>
+ </section>
 
-    <div class="container">
-        <article class="blog-card">
-            <h2>강서 클럽에서 진짜 재미보는 법: 내가 3년 동안 깨달은 꿀팁</h2>
-            <div class="meta">
-                <span>🔥 클럽 꿀팁</span>
-                <span>📅 2024년 7월</span>
-                <span>✍️ 강서 클럽 탐방러</span>
-            </div>
-            
-            <p>야, 나는 강서구에서 태어나고 자란 토박이야. 클럽 좀 다닌 지도 어언 3년째. 솔직히 처음에는 "강서에 클럽이 있나?"라는 생각부터 들었어. 근데 한번 빠져보니까 여기 매력이 장난 아냐. 오늘은 내가 직접 발로 뛰면서 느낀 강서 클럽의 진짜 매력과 꿀팁을 다 알려줄게.</p>
+ <div class="container">
+ <article class="blog-card">
+ <h2>강서 클럽에서 진짜 재미보는 법: 내가 3년 동안 깨달은 꿀팁</h2>
+ <div class="meta">
+ <span>🔥 클럽 꿀팁</span>
+ <span>📅 2024년 7월</span>
+ <span>✍️ 강서 클럽 탐방러</span>
+ </div>
+ 
+ <p>야, 나는 강서구에서 태어나고 자란 토박이야. 클럽 좀 다닌 지도 어언 3년째. 솔직히 처음에는 "강서에 클럽이 있나?"라는 생각부터 들었어. 근데 한번 빠져보니까 여기 매력이 장난 아냐. 오늘은 내가 직접 발로 뛰면서 느낀 강서 클럽의 진짜 매력과 꿀팁을 다 알려줄게.</p>
 
-            <p>처음 강서 클럽을 갔을 때는 완전 쫄보였어. 홍대나 강남처럼 유명한 곳만 가봤으니까. 근데 막상 가보니까 분위기가 훨씬 아늑하고 사람들도 더 친근하더라. 여긴 마치 동네 단골 술집 같은 느낌? 음악도 취향 저격이고, 무엇보다 술값이 합리적이야. 지갑 사정이 여유롭지 않은 나같은 직장인한테는 완전 럭키비키잖아?</p>
+ <p>처음 강서 클럽을 갔을 때는 완전 쫄보였어. 홍대나 강남처럼 유명한 곳만 가봤으니까. 근데 막상 가보니까 분위기가 훨씬 아늑하고 사람들도 더 친근하더라. 여긴 마치 동네 단골 술집 같은 느낌? 음악도 취향 저격이고, 무엇보다 술값이 합리적이야. 지갑 사정이 여유롭지 않은 나같은 직장인한테는 완전 럭키비키잖아?</p>
 
-            <div class="highlight-box">
-                <p><strong>💡 내가 주는 강서 클럽 첫 방문 꿀팁:</strong></p>
-                <p>금요일보다는 토요일이 더 재밌어. 사람도 많고 분위기도 더 핫해. 그리고 11시 이후에 가면 입장료가 할인되는 곳이 꽤 있으니까 참고해!</p>
-            </div>
+ <div class="highlight-box">
+ <p><strong>💡 내가 주는 강서 클럽 첫 방문 꿀팁:</strong></p>
+ <p>금요일보다는 토요일이 더 재밌어. 사람도 많고 분위기도 더 핫해. 그리고 11시 이후에 가면 입장료가 할인되는 곳이 꽤 있으니까 참고해!</p>
+ </div>
 
-            <p>내가 가장 자주 가는 곳은 화곡동 근처야. 거기는 클럽 골목이라고 불러도 될 정도로 클럽이 밀집해 있어. 한 번 가면 2~3군데 돌아다니기 좋아. 특히 한 클럽은 DJ가 진짜 미친 듯이 턴테이블을 돌리는데, 그 열정에 나도 모르게 춤을 추게 돼. 처음엔 부끄러웠는데, 거기 단골 형이 "걱정 마, 여기선 다들 너처럼 춤춰"라고 하더라. ㅋㅋㅋ 그 말 듣고 완전 편해졌어.</p>
+ <p>내가 가장 자주 가는 곳은 화곡동 근처야. 거기는 클럽 골목이라고 불러도 될 정도로 클럽이 밀집해 있어. 한 번 가면 2~3군데 돌아다니기 좋아. 특히 한 클럽은 DJ가 진짜 미친 듯이 턴테이블을 돌리는데, 그 열정에 나도 모르게 춤을 추게 돼. 처음엔 부끄러웠는데, 거기 단골 형이 "걱정 마, 여기선 다들 너처럼 춤춰"라고 하더라. ㅋㅋㅋ 그 말 듣고 완전 편해졌어.</p>
 
-            <p>그리고 강서 클럽의 숨은 장점 하나 더! 바로 먹거리야. 클럽 옆에 포장마차가 많아서 클럽 끝나고 떡볶이랑 순대 먹는 낙으로 산다. 어떤 날은 클럽보다 포장마차가 더 재미있을 때도 있어. 거기서 만난 사람들이랑 인생 이야기 나누다 보면 새벽 3시가 훌쩍 넘어가 있더라.</p>
+ <p>그리고 강서 클럽의 숨은 장점 하나 더! 바로 먹거리야. 클럽 옆에 포장마차가 많아서 클럽 끝나고 떡볶이랑 순대 먹는 낙으로 산다. 어떤 날은 클럽보다 포장마차가 더 재미있을 때도 있어. 거기서 만난 사람들이랑 인생 이야기 나누다 보면 새벽 3시가 훌쩍 넘어가 있더라.</p>
 
-            <ul>
-                <li><strong>🎵 음악 취향:</strong> EDM부터 힙합까지 다양해. 요즘은 인디 음악 트는 클럽도 생겼어.</li>
-                <li><strong>💰 가격:</strong> 칵테일 한 잔에 8,000원~12,000원. 강남의 반값이라고 보면 돼.</li>
-                <li><strong>👥 분위기:</strong> 2030 직장인이 많아서 부담 없이 어울리기 좋아.</li>
-                <li><strong>📍 위치:</strong> 화곡동, 등촌동, 가양동 쪽이 클럽 핫플이야.</li>
-            </ul>
+ <ul>
+ <li><strong>🎵 음악 취향:</strong> EDM부터 힙합까지 다양해. 요즘은 인디 음악 트는 클럽도 생겼어.</li>
+ <li><strong>💰 가격:</strong> 칵테일 한 잔에 8,000원~12,000원. 강남의 반값이라고 보면 돼.</li>
+ <li><strong>👥 분위기:</strong> 2030 직장인이 많아서 부담 없이 어울리기 좋아.</li>
+ <li><strong>📍 위치:</strong> 화곡동, 등촌동, 가양동 쪽이 클럽 핫플이야.</li>
+ </ul>
 
-            <p>사실 강서 클럽을 처음 가는 사람한테 가장 중요한 건 마음가짐이야. "여기서 재미를 못 보면 어쩌지?"라는 생각보다는 "오늘은 무조건 즐긴다!"라는 마인드로 가는 게 진짜 중요해. 내 친구 중에 한 명은 처음에 완전 긴장해서 왔는데, 막상 술 한 잔 하고 DJ랑 하이파이브 하더니 그날 이후로 매주 가고 있어.</p>
+ <p>사실 강서 클럽을 처음 가는 사람한테 가장 중요한 건 마음가짐이야. "여기서 재미를 못 보면 어쩌지?"라는 생각보다는 "오늘은 무조건 즐긴다!"라는 마인드로 가는 게 진짜 중요해. 내 친구 중에 한 명은 처음에 완전 긴장해서 왔는데, 막상 술 한 잔 하고 DJ랑 하이파이브 하더니 그날 이후로 매주 가고 있어.</p>
 
-            <p>마지막으로 꿀팁 하나 더! 클럽 SNS를 팔로우해 놔. 이벤트나 게스트 DJ 정보가 자주 올라와. 가끔 무료 입장 이벤트도 하니까 놓치지 마. 나도 지난주에 그렇게 5,000원 아꼈어. ㅋㅋㅋ</p>
+ <p>마지막으로 꿀팁 하나 더! 클럽 SNS를 팔로우해 놔. 이벤트나 게스트 DJ 정보가 자주 올라와. 가끔 무료 입장 이벤트도 하니까 놓치지 마. 나도 지난주에 그렇게 5,000원 아꼈어. ㅋㅋㅋ</p>
 
-            <p>강서 클럽, 생각보다 훨씬 재미있어. 한 번 와보면 알게 될 거야. 오늘 밤, 너도 강서 클럽에서 진짜 재미를 느껴봐. 나중에 후기 들려줘!</p>
+ <p>강서 클럽, 생각보다 훨씬 재미있어. 한 번 와보면 알게 될 거야. 오늘 밤, 너도 강서 클럽에서 진짜 재미를 느껴봐. 나중에 후기 들려줘!</p>
 
-            <a href="/" class="cta-button">🔥 강서 클럽 더 알아보기</a>
-        </article>
-    </div>
+ <a href="/" class="cta-button">🔥 강서 클럽 더 알아보기</a>
+ </article>
+ </div>
 
-    <footer>
-        <div class="container">
-            <p>© 2024 <a href="/">강서클럽</a> | 진짜 강서구 클럽 이야기</p>
-            <p style="margin-top: 8px;">문의: hello@gangseoclub.com | <a href="tel:02-1234-5678">02-1234-5678</a></p>
-        </div>
-    </footer>
+ <footer>
+ <div class="container">
+ <p>© 2024 <a href="/">강서클럽</a> | 진짜 강서구 클럽 이야기</p>
+ 
+ </div>
+ </footer>
 
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const mobileMenu = document.getElementById('mobileMenu');
-        hamburger.addEventListener('click', function() {
-            mobileMenu.classList.toggle('active');
-            const spans = this.querySelectorAll('span');
-            if (mobileMenu.classList.contains('active')) {
-                spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-                spans[1].style.opacity = '0';
-                spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-            } else {
-                spans[0].style.transform = 'none';
-                spans[1].style.opacity = '1';
-                spans[2].style.transform = 'none';
-            }
-        });
-        document.querySelectorAll('.mobile-menu a').forEach(link => {
-            link.addEventListener('click', function() {
-                mobileMenu.classList.remove('active');
-                const spans = hamburger.querySelectorAll('span');
-                spans[0].style.transform = 'none';
-                spans[1].style.opacity = '1';
-                spans[2].style.transform = 'none';
-            });
-        });
-    </script>
+ <script>
+ const hamburger = document.getElementById('hamburger');
+ const mobileMenu = document.getElementById('mobileMenu');
+ hamburger.addEventListener('click', function() {
+ mobileMenu.classList.toggle('active');
+ const spans = this.querySelectorAll('span');
+ if (mobileMenu.classList.contains('active')) {
+ spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+ spans[1].style.opacity = '0';
+ spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+ } else {
+ spans[0].style.transform = 'none';
+ spans[1].style.opacity = '1';
+ spans[2].style.transform = 'none';
+ }
+ });
+ document.querySelectorAll('.mobile-menu a').forEach(link => {
+ link.addEventListener('click', function() {
+ mobileMenu.classList.remove('active');
+ const spans = hamburger.querySelectorAll('span');
+ spans[0].style.transform = 'none';
+ spans[1].style.opacity = '1';
+ spans[2].style.transform = 'none';
+ });
+ });
+ </script>
 </body>
 </html>

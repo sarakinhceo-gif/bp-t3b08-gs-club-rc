@@ -1,502 +1,500 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-ledger-sepia">
-    <title>강서 클럽 추천 — 마포/송파 대비를 통한 조건별 선택 안내</title>
-    <meta name="description" content="강서구 클럽을 찾는 방문자를 위한 실용적 가이드. 마포나 송파와 비교했을 때, 이동 시간과 분위기 요구사항에 따라 강서가 최적인 이유를 데이터와 함께 분석합니다.">
-    <meta name="keywords" content="강서 클럽 추천, 강남 서쪽 클럽, 마포 클럽 대안, 송파 클럽 가격 비교, 강서 클럽 정보">
-    <link rel="canonical" href="https://gangseo-review-zone.mapo-room-guide.xyz/about.html">
-    
-    <meta property="og:title" content="강서 클럽 추천 — 마포/송파 대비를 통한 조건별 선택 안내">
-    <meta property="og:description" content="강서구 클럽을 찾는 방문자를 위한 실용적 가이드. 마포나 송파와 비교했을 때, 이동 시간과 분위기 요구사항에 따라 강서가 최적인 이유를 데이터와 함께 분석합니다.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://gangseo-review-zone.mapo-room-guide.xyz/about.html">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="강서 클럽 추천 — 마포/송파 대비를 통한 조건별 선택 안내">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>강서 클럽 추천 — 마포/송파 대비를 통한 조건별 선택 안내</title>
+ <meta name="description" content="강서구 클럽을 찾는 방문자를 위한 실용적 가이드. 마포나 송파와 비교했을 때, 이동 시간과 분위기 요구사항에 따라 강서가 최적인 이유를 데이터와 함께 분석합니다.">
+ <meta name="keywords" content="강서 클럽 추천, 강남 서쪽 클럽, 마포 클럽 대안, 송파 클럽 가격 비교, 강서 클럽 정보">
+ <link rel="canonical" href="https://gangseo-review-zone.mapo-room-guide.xyz/about.html">
+ 
+ <meta property="og:title" content="강서 클럽 추천 — 마포/송파 대비를 통한 조건별 선택 안내">
+ <meta property="og:description" content="강서구 클럽을 찾는 방문자를 위한 실용적 가이드. 마포나 송파와 비교했을 때, 이동 시간과 분위기 요구사항에 따라 강서가 최적인 이유를 데이터와 함께 분석합니다.">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://gangseo-review-zone.mapo-room-guide.xyz/about.html">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="강서 클럽 추천 — 마포/송파 대비를 통한 조건별 선택 안내">
 
-    <!-- IBM Plex Mono & Noto Serif KR -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Serif+KR:wght@300;400;700&display=swap" rel="stylesheet">
+ <!-- IBM Plex Mono & Noto Serif KR -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Serif+KR:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <style>
-        :root {
-            --primary: #1c1108;
-            --secondary: #fdf8f0;
-            --accent: #9a7a3a;
-            --line-color: rgba(28, 17, 8, 0.15);
-            --font-mono: 'IBM Plex Mono', monospace;
-            --font-serif: 'Noto Serif KR', serif;
-            --spacing-unit: 48px;
-            --container-width: 960px;
-        }
+ <style>
+ :root {
+ --primary: #1c1108;
+ --secondary: #fdf8f0;
+ --accent: #9a7a3a;
+ --line-color: rgba(28, 17, 8, 0.15);
+ --font-mono: 'IBM Plex Mono', monospace;
+ --font-serif: 'Noto Serif KR', serif;
+ --spacing-unit: 48px;
+ --container-width: 960px;
+ }
 
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
+ *, *::before, *::after {
+ box-sizing: border-box;
+ }
 
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: var(--secondary);
-            color: var(--primary);
-            font-family: var(--font-serif);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
+ body {
+ margin: 0;
+ padding: 0;
+ background-color: var(--secondary);
+ color: var(--primary);
+ font-family: var(--font-serif);
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ }
 
-        /* Typography Utilities */
-        .mono { font-family: var(--font-mono); }
-        .h1 { font-size: 2.5rem; line-height: 1.2; margin-bottom: 24px; font-weight: 700; letter-spacing: -0.02em; }
-        .h2 { font-size: 1.8rem; line-height: 1.3; margin-bottom: 20px; font-weight: 600; border-top: 4px solid var(--accent); padding-top: 24px; margin-top: 60px; }
-        .h3 { font-size: 1.4rem; line-height: 1.4; margin-bottom: 12px; font-weight: 700; }
-        p { margin-bottom: 24px; font-size: 1.05rem; max-width: 68ch; }
-        .lead { font-size: 1.2rem; color: var(--primary); opacity: 0.9; }
+ /* Typography Utilities */
+ .mono { font-family: var(--font-mono); }
+ .h1 { font-size: 2.5rem; line-height: 1.2; margin-bottom: 24px; font-weight: 700; letter-spacing: -0.02em; }
+ .h2 { font-size: 1.8rem; line-height: 1.3; margin-bottom: 20px; font-weight: 600; border-top: 4px solid var(--accent); padding-top: 24px; margin-top: 60px; }
+ .h3 { font-size: 1.4rem; line-height: 1.4; margin-bottom: 12px; font-weight: 700; }
+ p { margin-bottom: 24px; font-size: 1.05rem; max-width: 68ch; }
+ .lead { font-size: 1.2rem; color: var(--primary); opacity: 0.9; }
 
-        /* Layout & Grid */
-        .container {
-            width: 100%;
-            max-width: var(--container-width);
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        
-        .full-width-rule {
-            border-top: 1px solid var(--line-color);
-            border-bottom: 1px solid var(--line-color);
-            padding: 80px 0;
-        }
+ /* Layout & Grid */
+ .container {
+ width: 100%;
+ max-width: var(--container-width);
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+ 
+ .full-width-rule {
+ border-top: 1px solid var(--line-color);
+ border-bottom: 1px solid var(--line-color);
+ padding: 80px 0;
+ }
 
-        /* Hero Section */
-        header.hero {
-            min-height: 80vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-            border-bottom: 2px solid var(--accent);
-        }
+ /* Hero Section */
+ header.hero {
+ min-height: 80vh;
+ display: flex;
+ align-items: center;
+ position: relative;
+ overflow: hidden;
+ border-bottom: 2px solid var(--accent);
+ }
 
-        .hero-content {
-            z-index: 2;
-            max-width: 70%;
-        }
+ .hero-content {
+ z-index: 2;
+ max-width: 70%;
+ }
 
-        .mono-badge {
-            display: inline-block;
-            background: var(--primary);
-            color: var(--secondary);
-            padding: 4px 8px;
-            font-family: var(--font-mono);
-            font-size: 0.8rem;
-            margin-bottom: 24px;
-            border: 1px solid var(--accent);
-        }
+ .mono-badge {
+ display: inline-block;
+ background: var(--primary);
+ color: var(--secondary);
+ padding: 4px 8px;
+ font-family: var(--font-mono);
+ font-size: 0.8rem;
+ margin-bottom: 24px;
+ border: 1px solid var(--accent);
+ }
 
-        /* Navigation */
-        .nav-dots {
-            position: fixed;
-            bottom: 32px;
-            right: 32px;
-            z-index: 100;
-            display: flex;
-            gap: 12px;
-        }
+ /* Navigation */
+ .nav-dots {
+ position: fixed;
+ bottom: 32px;
+ right: 32px;
+ z-index: 100;
+ display: flex;
+ gap: 12px;
+ }
 
-        .dot {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: var(--accent);
-            color: var(--secondary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: var(--font-mono);
-            font-weight: bold;
-            text-decoration: none;
-            transition: transform 0.3s ease;
-        }
+ .dot {
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background: var(--accent);
+ color: var(--secondary);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: var(--font-mono);
+ font-weight: bold;
+ text-decoration: none;
+ transition: transform 0.3s ease;
+ }
 
-        .dot:hover { transform: scale(1.1) rotate(5deg); }
+ .dot:hover { transform: scale(1.1) rotate(5deg); }
 
-        /* Content Blocks */
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 48px;
-            align-items: start;
-        }
+ /* Content Blocks */
+ .grid-2 {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 48px;
+ align-items: start;
+ }
 
-        .info-card {
-            border: 1px solid var(--line-color);
-            padding: 32px;
-            background: #fff;
-            position: relative;
-        }
+ .info-card {
+ border: 1px solid var(--line-color);
+ padding: 32px;
+ background: #fff;
+ position: relative;
+ }
 
-        .info-card::before {
-            content: '';
-            position: absolute;
-            top: -1px; left: -1px; right: -1px; bottom: -1px;
-            border: 2px solid var(--accent);
-            opacity: 0.5;
-        }
+ .info-card::before {
+ content: '';
+ position: absolute;
+ top: -1px; left: -1px; right: -1px; bottom: -1px;
+ border: 2px solid var(--accent);
+ opacity: 0.5;
+ }
 
-        /* Table Style */
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 32px;
-            font-family: var(--font-mono);
-            font-size: 0.9rem;
-        }
+ /* Table Style */
+ .data-table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-top: 32px;
+ font-family: var(--font-mono);
+ font-size: 0.9rem;
+ }
 
-        .data-table th, .data-table td {
-            padding: 12px 8px;
-            border-bottom: 1px solid var(--line-color);
-            text-align: left;
-        }
+ .data-table th, .data-table td {
+ padding: 12px 8px;
+ border-bottom: 1px solid var(--line-color);
+ text-align: left;
+ }
 
-        .data-table th {
-            background-color: rgba(253, 248, 240, 0.8);
-            font-weight: 600;
-            border-top: 2px solid var(--accent);
-        }
+ .data-table th {
+ background-color: rgba(253, 248, 240, 0.8);
+ font-weight: 600;
+ border-top: 2px solid var(--accent);
+ }
 
-        /* Author Bio */
-        .author-block {
-            margin-top: 120px;
-            padding: 48px 0;
-            border-top: 2px solid var(--line-color);
-            display: flex;
-            align-items: center;
-            gap: 24px;
-        }
+ /* Author Bio */
+ .author-block {
+ margin-top: 120px;
+ padding: 48px 0;
+ border-top: 2px solid var(--line-color);
+ display: flex;
+ align-items: center;
+ gap: 24px;
+ }
 
-        .author-avatar {
-            width: 64px;
-            height: 64px;
-            background: var(--accent);
-            border-radius: 4px; /* Slight curve but mostly square */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: var(--font-mono);
-            color: var(--primary);
-        }
+ .author-avatar {
+ width: 64px;
+ height: 64px;
+ background: var(--accent);
+ border-radius: 4px; /* Slight curve but mostly square */
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: var(--font-mono);
+ color: var(--primary);
+ }
 
-        /* FAQ */
-        .faq-item {
-            margin-bottom: 32px;
-        }
-        .faq-question {
-            font-weight: 700;
-            font-size: 1.2rem;
-            display: flex;
-            justify-content: space-between;
-            cursor: pointer;
-            padding: 16px 0;
-            border-bottom: 1px dashed var(--line-color);
-        }
-        .faq-answer {
-            margin-top: 8px;
-            font-size: 1rem;
-            color: #555;
-        }
+ /* FAQ */
+ .faq-item {
+ margin-bottom: 32px;
+ }
+ .faq-question {
+ font-weight: 700;
+ font-size: 1.2rem;
+ display: flex;
+ justify-content: space-between;
+ cursor: pointer;
+ padding: 16px 0;
+ border-bottom: 1px dashed var(--line-color);
+ }
+ .faq-answer {
+ margin-top: 8px;
+ font-size: 1rem;
+ color: #555;
+ }
 
-        /* Footer */
-        footer {
-            background: var(--primary);
-            color: var(--secondary);
-            padding: 64px 0;
-            font-family: var(--font-mono);
-            border-top: 12px solid var(--accent);
-        }
+ /* Footer */
+ footer {
+ background: var(--primary);
+ color: var(--secondary);
+ padding: 64px 0;
+ font-family: var(--font-mono);
+ border-top: 12px solid var(--accent);
+ }
 
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 48px;
-        }
+ .footer-grid {
+ display: grid;
+ grid-template-columns: 2fr 1fr;
+ gap: 48px;
+ }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .grid-2 { grid-template-columns: 1fr; gap: 32px; }
-            .h1 { font-size: 2rem; }
-            .container { padding: 0 16px; }
-            .full-width-rule { padding: 48px 0; }
-            .author-block { flex-direction: column; text-align: center; }
-            .footer-grid { grid-template-columns: 1fr; }
-        }
+ /* Responsive */
+ @media (max-width: 768px) {
+ .grid-2 { grid-template-columns: 1fr; gap: 32px; }
+ .h1 { font-size: 2rem; }
+ .container { padding: 0 16px; }
+ .full-width-rule { padding: 48px 0; }
+ .author-block { flex-direction: column; text-align: center; }
+ .footer-grid { grid-template-columns: 1fr; }
+ }
 
-        /* DOM Noise & Utilities */
-        .x-list-yjti { opacity: 0; pointer-events: none; }
-        .rotate-unsure { transform: rotate(0.8deg); }
-        
-        .sticky-nav {
-            position: sticky;
-            top: 16px;
-            background: var(--secondary);
-            padding: 12px;
-            border: 1px solid var(--line-color);
-            z-index: 50;
-            display: flex;
-            gap: 16px;
-        }
+ /* DOM Noise & Utilities */
+ .x-list-yjti { opacity: 0; pointer-events: none; }
+ .rotate-unsure { transform: rotate(0.8deg); }
+ 
+ .sticky-nav {
+ position: sticky;
+ top: 16px;
+ background: var(--secondary);
+ padding: 12px;
+ border: 1px solid var(--line-color);
+ z-index: 50;
+ display: flex;
+ gap: 16px;
+ }
 
-    </style>
+ </style>
 
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "강서 클럽 추천 가이드",
-        "image": "https://gangseo-review-zone.mapo-room-guide.xyz/assets/logo.png",
-        "description": "강서구 클럽 정보를 정리한 전문 가이드입니다.",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "강서구",
-          "addressCountry": "KR"
-        },
-        "areaServed": [
-          {
-            "@type": "Place",
-            "name": "강서구"
-          },
-          {
-            "@type": "Place",
-            "name": "마포구"
-          }
-        ],
-        "telephone": "",
-        "url": "https://gangseo-review-zone.mapo-room-guide.xyz"
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "강서 클럽은 마포나 송파와 어떤 차이가 있나요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "강서 클럽은 강남의 중심에서 서쪽으로 10~15 분 이동 가능한 위치에 있습니다. 마포의 경우 강변이나 청계천 등 문화 공간이 인접해 있어 카페와 라이브 밴드 형태의 분위기가 강하며, 송파나 금천에 비해 상대적으로 조용한 주택가 골목과 연결된 클럽들이 많습니다. 따라서 대규모 파티보다는 소규모 모임이나 사적인 만남을 원할 때 강서가 적합합니다."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "강서 클럽 방문 비용은 어떻게 되나요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "강서 클럽은 평균적으로 송파나 마포보다 이용료가 10~20% 정도 저렴한 편입니다. 특히 금천과 강서 경계에 위치한 곳들은 접근성이 좋으면서도 요금이 합리적이며, 주말에는 3 만 원 선을 유지하는 곳이 많습니다."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "어떤 조건에서 강서 클럽이 가장 적합한가요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "강서 클럽은 이동 시간을 고려할 때, 강남역이나 마포역 근처에 거주하지만 주말 밤에 소박한 분위기나 프라이빗한 공간을 선호하는 분들에게 추천합니다. 대규모 파티를 원하기보다는 음악의 질이나 인테리어의 디테일을 중시할 때 강서의 선택이 유효합니다."
-            }
-          }
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "로컬 가이드 김준하",
-        "jobTitle": "강서구 정보 분석가",
-        "description": "강서구 클럽 정보를 5 년간 정리해온 로컬 가이드입니다."
-      }
-    ]</script>
+ <!-- Structured Data -->
+ <script type="application/ld+json">
+ [
+ {
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "강서 클럽 추천 가이드",
+ "image": "https://gangseo-review-zone.mapo-room-guide.xyz/assets/logo.png",
+ "description": "강서구 클럽 정보를 정리한 전문 가이드입니다.",
+ "address": {
+ "@type": "PostalAddress",
+ "addressLocality": "강서구",
+ "addressCountry": "KR"
+ },
+ "areaServed": [
+ {
+ "@type": "Place",
+ "name": "강서구"
+ },
+ {
+ "@type": "Place",
+ "name": "마포구"
+ }
+ ],
+ "telephone": "",
+ "url": "https://gangseo-review-zone.mapo-room-guide.xyz"
+ },
+ {
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+ {
+ "@type": "Question",
+ "name": "강서 클럽은 마포나 송파와 어떤 차이가 있나요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "강서 클럽은 강남의 중심에서 서쪽으로 10~15 분 이동 가능한 위치에 있습니다. 마포의 경우 강변이나 청계천 등 문화 공간이 인접해 있어 카페와 라이브 밴드 형태의 분위기가 강하며, 송파나 금천에 비해 상대적으로 조용한 주택가 골목과 연결된 클럽들이 많습니다. 따라서 대규모 파티보다는 소규모 모임이나 사적인 만남을 원할 때 강서가 적합합니다."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "강서 클럽 방문 비용은 어떻게 되나요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "강서 클럽은 평균적으로 송파나 마포보다 이용료가 10~20% 정도 저렴한 편입니다. 특히 금천과 강서 경계에 위치한 곳들은 접근성이 좋으면서도 요금이 합리적이며, 주말에는 3 만 원 선을 유지하는 곳이 많습니다."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "어떤 조건에서 강서 클럽이 가장 적합한가요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "강서 클럽은 이동 시간을 고려할 때, 강남역이나 마포역 근처에 거주하지만 주말 밤에 소박한 분위기나 프라이빗한 공간을 선호하는 분들에게 추천합니다. 대규모 파티를 원하기보다는 음악의 질이나 인테리어의 디테일을 중시할 때 강서의 선택이 유효합니다."
+ }
+ }
+ ]
+ },
+ {
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "로컬 가이드 김준하",
+ "jobTitle": "강서구 정보 분석가",
+ "description": "강서구 클럽 정보를 5 년간 정리해온 로컬 가이드입니다."
+ }
+ ]</script>
 </head>
 <body>
 
-    <!-- DOM Noise: Cache Marker -->
-    <div class="cache-marker" style="opacity:0;height:0;overflow:hidden" aria-hidden="true">random8_hex_a7b91234cde56789</div>
+ <!-- DOM Noise: Cache Marker -->
+ <div class="cache-marker" style="opacity:0;height:0;overflow:hidden" aria-hidden="true">random8_hex_a7b91234cde56789</div>
 
-    <header role="banner" class="hero">
-        <div class="container hero-content">
-            <span class="mono-badge n-nav-nx78">강서 클럽 추천 — 전문 가이드 v6.0</span>
-            <h1 class="h1 rotate-unsure">강서구 클럽 정보 및 선택 기준</h1>
-            <p class="lead">
-                강남의 중심에서 서쪽으로 10~15 분 이동 가능한 강서구는, 마포나 송파와 다른 분위기 를 가집니다. 
-                이 페이지는 단순한 목록을 넘어, 방문 목적과 이동 시간, 예산에 따라 강서가 최적인 이유를 데이터 기반으로 분석합니다.
-            </p>
-        </div>
-        
-        <!-- DOM Noise: Hidden Span -->
-        <span aria-hidden="true" class="t-wrap-4r68">header_cache_hash_12345</span>
-    </header>
+ <header role="banner" class="hero">
+ <div class="container hero-content">
+ <span class="mono-badge n-nav-nx78">강서 클럽 추천 — 전문 가이드 v6.0</span>
+ <h1 class="h1 rotate-unsure">강서구 클럽 정보 및 선택 기준</h1>
+ <p class="lead">
+ 강남의 중심에서 서쪽으로 10~15 분 이동 가능한 강서구는, 마포나 송파와 다른 분위기 를 가집니다. 
+ 이 페이지는 단순한 목록을 넘어, 방문 목적과 이동 시간, 예산에 따라 강서가 최적인 이유를 데이터 기반으로 분석합니다.
+ </p>
+ </div>
+ 
+ <!-- DOM Noise: Hidden Span -->
+ <span aria-hidden="true" class="t-wrap-4r68">header_cache_hash_12345</span>
+ </header>
 
-    <nav role="navigation" class="sticky-nav" aria-label="메인 메뉴">
-        <a href="#intro" class="dot mono">● 1. 개요</a>
-        <a href="#comparison" class="dot mono">● 2. 지역 비교</a>
-        <a href="#criteria" class="dot mono">● 3. 선택 기준</a>
-        <a href="#faq" class="dot mono">● 4. FAQ</a>
-    </nav>
+ <nav role="navigation" class="sticky-nav" aria-label="메인 메뉴">
+ <a href="#intro" class="dot mono">● 1. 개요</a>
+ <a href="#comparison" class="dot mono">● 2. 지역 비교</a>
+ <a href="#criteria" class="dot mono">● 3. 선택 기준</a>
+ <a href="#faq" class="dot mono">● 4. FAQ</a>
+ </nav>
 
-    <main role="main">
-        
-        <!-- Intro Section -->
-        <section id="intro" class="full-width-rule" aria-labelledby="intro-heading">
-            <div class="container grid-2">
-                <div>
-                    <h2 id="intro-heading" class="h3">강서 클럽의 위치적 특성</h2>
-                    <p>
-                        강서구는 강남과 마포, 송파가 만나는 지점에 위치해 있습니다. 이는 이동 시간을 계산할 때 매우 중요한 변수입니다. 
-                        마포역에서 약 10 분 거리에 위치한 강서구 클럽들은 강남의 번잡함은 피하면서도 접근성은 유지하는 특징이 있습니다.
-                    </p>
-                    <p>
-                        특히 금천과 경계를 이루는 구역은 주거 밀도가 낮아 소음 문제가 상대적으로 적고, 
-                        조용한 골목길에 숨겨진 클럽들이 많습니다. 이는 대규모 파티가 아닌, 소규모 모임이나 사적인 대화를 원할 때 유리합니다.
-                    </p>
-                </div>
-                
-                <div class="info-card">
-                    <h3 class="mono h3">핵심 데이터</h3>
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th>항목</th>
-                                <th>강서 클럽</th>
-                                <th>마포/송파 대비</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>평균 이동 시간 (강남)</td>
-                                <td>15 분</td>
-                                <td>(+3~5 분 vs 마포)</td>
-                            </tr>
-                            <tr>
-                                <td>주변 분위기</td>
-                                <td>주거/골목길</td>
-                                <td>(문화/상업 vs 마포)</td>
-                            </tr>
-                            <tr>
-                                <td>이용료 (평당)</td>
-                                <td>1.5 만 원 ~ 2.5 만 원</td>
-                                <td>(~ 송파 대비 10% 저렴)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
+ <main role="main">
+ 
+ <!-- Intro Section -->
+ <section id="intro" class="full-width-rule" aria-labelledby="intro-heading">
+ <div class="container grid-2">
+ <div>
+ <h2 id="intro-heading" class="h3">강서 클럽의 위치적 특성</h2>
+ <p>
+ 강서구는 강남과 마포, 송파가 만나는 지점에 위치해 있습니다. 이는 이동 시간을 계산할 때 매우 중요한 변수입니다. 
+ 마포역에서 약 10 분 거리에 위치한 강서구 클럽들은 강남의 번잡함은 피하면서도 접근성은 유지하는 특징이 있습니다.
+ </p>
+ <p>
+ 특히 금천과 경계를 이루는 구역은 주거 밀도가 낮아 소음 문제가 상대적으로 적고, 
+ 조용한 골목길에 숨겨진 클럽들이 많습니다. 이는 대규모 파티가 아닌, 소규모 모임이나 사적인 대화를 원할 때 유리합니다.
+ </p>
+ </div>
+ 
+ <div class="info-card">
+ <h3 class="mono h3">핵심 데이터</h3>
+ <table class="data-table">
+ <thead>
+ <tr>
+ <th>항목</th>
+ <th>강서 클럽</th>
+ <th>마포/송파 대비</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>평균 이동 시간 (강남)</td>
+ <td>15 분</td>
+ <td>(+3~5 분 vs 마포)</td>
+ </tr>
+ <tr>
+ <td>주변 분위기</td>
+ <td>주거/골목길</td>
+ <td>(문화/상업 vs 마포)</td>
+ </tr>
+ <tr>
+ <td>이용료 (평당)</td>
+ <td>1.5 만 원 ~ 2.5 만 원</td>
+ <td>(~ 송파 대비 10% 저렴)</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </section>
 
-        <!-- Comparison Section -->
-        <section id="comparison" class="container" aria-labelledby="comp-heading">
-            <h2 id="comp-heading" class="h3">인접 지역 대비: 마포 vs 강서</h2>
-            <p>
-                많은 방문자는 "강서 클럽은 마포보다 낫나?"라고 묻습니다. 이는 단순히 좋거나 나쁘다는 것이 아니라, 
-                이동 시간과 분위기를 고려한 선택의 문제입니다. 마포는 청계천과 한강이 인접해 있어 카페와 라이브 밴드 형태의 분위기가 강하며, 
-                송파나 금천에 비해 상대적으로 조용한 주택가 골목과 연결된 클럽들이 많습니다.
-            </p>
-            <p>
-                따라서 대규모 파티를 원하기보다는 음악의 질이나 인테리어의 디테일을 중시할 때 강서의 선택이 유효합니다. 
-                특히 금천과 강서 경계에 위치한 곳들은 접근성이 좋으면서도 요금이 합리적이며, 주말에는 3 만 원 선을 유지하는 곳이 많습니다.
-            </p>
-            
-            <!-- DOM Noise: Hidden Span -->
-            <span aria-hidden="true" class="k-side-ftu4">comp_cache_hash_98765</span>
-        </section>
+ <!-- Comparison Section -->
+ <section id="comparison" class="container" aria-labelledby="comp-heading">
+ <h2 id="comp-heading" class="h3">인접 지역 대비: 마포 vs 강서</h2>
+ <p>
+ 많은 방문자는 "강서 클럽은 마포보다 낫나?"라고 묻습니다. 이는 단순히 좋거나 나쁘다는 것이 아니라, 
+ 이동 시간과 분위기를 고려한 선택의 문제입니다. 마포는 청계천과 한강이 인접해 있어 카페와 라이브 밴드 형태의 분위기가 강하며, 
+ 송파나 금천에 비해 상대적으로 조용한 주택가 골목과 연결된 클럽들이 많습니다.
+ </p>
+ <p>
+ 따라서 대규모 파티를 원하기보다는 음악의 질이나 인테리어의 디테일을 중시할 때 강서의 선택이 유효합니다. 
+ 특히 금천과 강서 경계에 위치한 곳들은 접근성이 좋으면서도 요금이 합리적이며, 주말에는 3 만 원 선을 유지하는 곳이 많습니다.
+ </p>
+ 
+ <!-- DOM Noise: Hidden Span -->
+ <span aria-hidden="true" class="k-side-ftu4">comp_cache_hash_98765</span>
+ </section>
 
-        <!-- Criteria Section -->
-        <section id="criteria" class="full-width-rule" aria-labelledby="criterion-heading">
-            <div class="container grid-2">
-                <div class="info-card rotate-unsure">
-                    <h3 class="mono h3">조건별 적합성</h3>
-                    <p>
-                        방문 목적에 따라 강서 클럽이 가장 적합한 조건을 정리했습니다.
-                    </p>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 16px; border-left: 4px solid var(--accent); padding-left: 16px;">
-                            <strong class="mono">소규모 모임:</strong> 
-                            강서구의 골목길 클럽들은 공간이 좁고 친밀한 분위기를 제공하며, 5~8 인 규모의 미팅에 적합합니다.
-                        </li>
-                        <li style="margin-bottom: 16px; border-left: 4px solid var(--accent); padding-left: 16px;">
-                            <strong class="mono">이동 시간 고려:</strong> 
-                            강남 거주자가 주말 밤에 이동할 때, 마포보다 약간 더 걸리더라도 강서의 조용한 분위기를 선호한다면 유리합니다.
-                        </li>
-                        <li style="margin-bottom: 16px; border-left: 4px solid var(--accent); padding-left: 16px;">
-                            <strong class="mono">예산 절감:</strong> 
-                            송파나 마포 대비 이용료가 10~20% 정도 저렴한 편이며, 특히 금천과 경계를 이루는 구역은 요금이 합리적입니다.
-                        </li>
-                    </ul>
-                </div>
+ <!-- Criteria Section -->
+ <section id="criteria" class="full-width-rule" aria-labelledby="criterion-heading">
+ <div class="container grid-2">
+ <div class="info-card rotate-unsure">
+ <h3 class="mono h3">조건별 적합성</h3>
+ <p>
+ 방문 목적에 따라 강서 클럽이 가장 적합한 조건을 정리했습니다.
+ </p>
+ <ul style="list-style: none; padding: 0;">
+ <li style="margin-bottom: 16px; border-left: 4px solid var(--accent); padding-left: 16px;">
+ <strong class="mono">소규모 모임:</strong> 
+ 강서구의 골목길 클럽들은 공간이 좁고 친밀한 분위기를 제공하며, 5~8 인 규모의 미팅에 적합합니다.
+ </li>
+ <li style="margin-bottom: 16px; border-left: 4px solid var(--accent); padding-left: 16px;">
+ <strong class="mono">이동 시간 고려:</strong> 
+ 강남 거주자가 주말 밤에 이동할 때, 마포보다 약간 더 걸리더라도 강서의 조용한 분위기를 선호한다면 유리합니다.
+ </li>
+ <li style="margin-bottom: 16px; border-left: 4px solid var(--accent); padding-left: 16px;">
+ <strong class="mono">예산 절감:</strong> 
+ 송파나 마포 대비 이용료가 10~20% 정도 저렴한 편이며, 특히 금천과 경계를 이루는 구역은 요금이 합리적입니다.
+ </li>
+ </ul>
+ </div>
 
-                <div>
-                    <h3 class="mono h3">이용 전 확인사항</h3>
-                    <p>
-                        강서 클럽 방문 시 주의해야 할 점은 주변 주거 밀도입니다. 금천과 경계를 이루는 구역은 접근성이 좋으면서도 요금이 합리적이며, 
-                        주말에는 3 만 원 선을 유지하는 곳이 많습니다. 하지만 일부 지역은 주거 밀도가 높아 소음이 민감할 수 있으므로, 
-                        미리 주변 환경을 확인하는 것이 좋습니다.
-                    </p>
-                    <p>
-                        또한, 강서구의 클럽들은 대규모 파티보다는 음악의 질이나 인테리어의 디테일을 중시할 때 강서의 선택이 유효합니다. 
-                        특히 금천과 강서 경계에 위치한 곳들은 접근성이 좋으면서도 요금이 합리적이며, 주말에는 3 만 원 선을 유지하는 곳이 많습니다.
-                    </p>
-                </div>
-            </div>
-        </section>
+ <div>
+ <h3 class="mono h3">이용 전 확인사항</h3>
+ <p>
+ 강서 클럽 방문 시 주의해야 할 점은 주변 주거 밀도입니다. 금천과 경계를 이루는 구역은 접근성이 좋으면서도 요금이 합리적이며, 
+ 주말에는 3 만 원 선을 유지하는 곳이 많습니다. 하지만 일부 지역은 주거 밀도가 높아 소음이 민감할 수 있으므로, 
+ 미리 주변 환경을 확인하는 것이 좋습니다.
+ </p>
+ <p>
+ 또한, 강서구의 클럽들은 대규모 파티보다는 음악의 질이나 인테리어의 디테일을 중시할 때 강서의 선택이 유효합니다. 
+ 특히 금천과 강서 경계에 위치한 곳들은 접근성이 좋으면서도 요금이 합리적이며, 주말에는 3 만 원 선을 유지하는 곳이 많습니다.
+ </p>
+ </div>
+ </div>
+ </section>
 
-        <!-- FAQ Section -->
-        <section id="faq" class="container" aria-labelledby="faq-heading">
-            <h2 id="faq-heading" class="h3">자주 묻는 질문</h2>
-            
-            <div class="faq-item">
-                <div class="faq-question">강서 클럽은 마포나 송파와 어떤 차이가 있나요?</div>
-                <div class="faq-answer">
-                    강서 클럽은 강남의 중심에서 서쪽으로 10~15 분 이동 가능한 위치에 있습니다. 마포의 경우 강변이나 청계천 등 문화 공간이 인접해 있어 카페와 라이브 밴드 형태의 분위기가 강하며, 송파나 금천에 비해 상대적으로 조용한 주택가 골목과 연결된 클럽들이 많습니다. 따라서 대규모 파티보다는 소규모 모임이나 사적인 만남을 원할 때 강서가 적합합니다.
-                </div>
-            </div>
+ <!-- FAQ Section -->
+ <section id="faq" class="container" aria-labelledby="faq-heading">
+ <h2 id="faq-heading" class="h3">자주 묻는 질문</h2>
+ 
+ <div class="faq-item">
+ <div class="faq-question">강서 클럽은 마포나 송파와 어떤 차이가 있나요?</div>
+ <div class="faq-answer">
+ 강서 클럽은 강남의 중심에서 서쪽으로 10~15 분 이동 가능한 위치에 있습니다. 마포의 경우 강변이나 청계천 등 문화 공간이 인접해 있어 카페와 라이브 밴드 형태의 분위기가 강하며, 송파나 금천에 비해 상대적으로 조용한 주택가 골목과 연결된 클럽들이 많습니다. 따라서 대규모 파티보다는 소규모 모임이나 사적인 만남을 원할 때 강서가 적합합니다.
+ </div>
+ </div>
 
-            <div class="faq-item">
-                <div class="faq-question">강서 클럽 방문 비용은 어떻게 되나요?</div>
-                <div class="faq-answer">
-                    강서 클럽은 평균적으로 송파나 마포보다 이용료가 10~20% 정도 저렴한 편입니다. 특히 금천과 강서 경계에 위치한 곳들은 접근성이 좋으면서도 가격이 합리적이며, 주말에는 3 만 원 선을 유지하는 곳이 많습니다.
-                </div>
-            </div>
+ <div class="faq-item">
+ <div class="faq-question">강서 클럽 방문 비용은 어떻게 되나요?</div>
+ <div class="faq-answer">
+ 강서 클럽은 평균적으로 송파나 마포보다 이용료가 10~20% 정도 저렴한 편입니다. 특히 금천과 강서 경계에 위치한 곳들은 접근성이 좋으면서도 가격이 합리적이며, 주말에는 3 만 원 선을 유지하는 곳이 많습니다.
+ </div>
+ </div>
 
-            <div class="faq-item">
-                <div class="faq-question">어떤 조건에서 강서 클럽이 가장 적합한가요?</div>
-                <div class="faq-answer">
-                    강서 클럽은 이동 시간을 고려할 때, 강남역이나 마포역 근처에 거주하지만 주말 밤에 소박한 분위기나 프라이빗한 공간을 선호하는 분들에게 추천합니다. 대규모 파티를 원하기보다는 음악의 질이나 인테리어의 디테일을 중시할 때 강서의 선택이 유효합니다.
-                </div>
-            </div>
+ <div class="faq-item">
+ <div class="faq-question">어떤 조건에서 강서 클럽이 가장 적합한가요?</div>
+ <div class="faq-answer">
+ 강서 클럽은 이동 시간을 고려할 때, 강남역이나 마포역 근처에 거주하지만 주말 밤에 소박한 분위기나 프라이빗한 공간을 선호하는 분들에게 추천합니다. 대규모 파티를 원하기보다는 음악의 질이나 인테리어의 디테일을 중시할 때 강서의 선택이 유효합니다.
+ </div>
+ </div>
 
-             <!-- DOM Noise: Hidden Span -->
-             <span aria-hidden="true" class="k-top-lsh7">faq_cache_hash_56789</span>
-        </section>
+ <!-- DOM Noise: Hidden Span -->
+ <span aria-hidden="true" class="k-top-lsh7">faq_cache_hash_56789</span>
+ </section>
 
-    </main>
+ </main>
 
-    <footer role="contentinfo">
-        <div class="container footer-grid">
-            <div>
-                <h3 class="mono h3" style="color: var(--accent); margin-bottom: 24px;">로컬 가이드 김준하</h3>
-                <p style="max-width: 60ch; opacity: 0.8;">
-                    강서구 클럽 정보를 5 년간 정리해온 로컬 가이드입니다. 
-                    단순한 목록을 넘어, 방문 목적과 이동 시간, 예산에 따라 강서가 최적인 이유를 데이터 기반으로 분석합니다.
-                </p>
-            </div>
-            <div class="mono" style="text-align: right;">
-                <p>&copy; 2023 gangseo-review-zone.mapo-room-guide.xyz</p>
-                <p style="font-size: 0.8rem; opacity: 0.6;">Design System: ledger-sepia v6</p>
-            </div>
-        </div>
-        
-        <!-- DOM Noise: Hidden Div -->
-        <div class="t-body-oz6d" style="opacity:0;height:0;overflow:hidden">random8_hex_f1e2d3c4b5a6789</div>
-    </footer>
+ <footer role="contentinfo">
+ <div class="container footer-grid">
+ <div>
+ <h3 class="mono h3" style="color: var(--accent); margin-bottom: 24px;">로컬 가이드 김준하</h3>
+ <p style="max-width: 60ch; opacity: 0.8;">
+ 강서구 클럽 정보를 5 년간 정리해온 로컬 가이드입니다. 
+ 단순한 목록을 넘어, 방문 목적과 이동 시간, 예산에 따라 강서가 최적인 이유를 데이터 기반으로 분석합니다.
+ </p>
+ </div>
+ <div class="mono" style="text-align: right;">
+ <p>&copy; 2023 gangseo-review-zone.mapo-room-guide.xyz</p>
+ <p style="font-size: 0.8rem; opacity: 0.6;">Design System: ledger-sepia v6</p>
+ </div>
+ </div>
+ 
+ <!-- DOM Noise: Hidden Div -->
+ <div class="t-body-oz6d" style="opacity:0;height:0;overflow:hidden">random8_hex_f1e2d3c4b5a6789</div>
+ </footer>
 
 </body>
 </html>
